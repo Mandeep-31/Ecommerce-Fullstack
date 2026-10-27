@@ -1,0 +1,47 @@
+/backend/vendor
+/backend/node_modules
+/backend/.env
+/backend/bootstrap/cache/*.php
+/backend/storage/*.key
+/frontend/node_modules
+/frontend/dist
+/frontend/.env
+/frontend/.env.local
+# Environment files
+/frontend/.env.*
+!/frontend/.env.example
+/backend/.env.*
+!/backend/.env.example
+
+# Frontend build output
+/frontend/build
+
+# Backend generated files
+/backend/storage/*.key
+/backend/bootstrap/cache/*.php
+
+# Logs and temporary files
+*.log
+.DS_Store
+# Keep the former standalone repository metadata locally; this is one monorepo now.
+/.git-subrepo-backups/
+
+# Never commit local configuration or credentials.
+.env
+.env.*
+!**/.env.example
+
+# Dependencies, generated builds, caches, and local databases.
+**/node_modules/
+**/vendor/
+**/dist/
+**/build/
+**/coverage/
+**/.cache/
+**/.vite/
+**/bootstrap/cache/*.php
+**/storage/*.key
+backend/database/*.sqlite*
+backend/storage/logs/*.log
+.phpunit.result.cache
+.DS_Store
